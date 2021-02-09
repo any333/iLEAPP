@@ -121,6 +121,8 @@ def get_icon_name(category, artifact):
             icon = 'type'
         elif artifact == 'KEYBOARD APPLICATION USAGE':
             icon = 'type'
+    elif category == 'KEYCHAIN':
+        icon = 'key'
     elif category == 'KIK':
         if artifact == 'KIK MESSAGES':
             icon = 'message-square'

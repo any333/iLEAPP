@@ -63,6 +63,7 @@ from scripts.artifacts.iconsScreen import get_iconsScreen
 from scripts.artifacts.interactionCcontacts import get_interactionCcontacts
 from scripts.artifacts.keyboardAppUsage import get_keyboardAppUsage
 from scripts.artifacts.keyboardLexicon import get_keyboardLexicon
+from scripts.artifacts.keychainAll import get_keychainAll
 from scripts.artifacts.kikMessages import get_kikMessages
 from scripts.artifacts.knowCall import get_knowCall
 from scripts.artifacts.lastBuild import get_lastBuild, get_iTunesBackupInfo
@@ -188,6 +189,7 @@ tosearch = {'lastBuild': ('IOS Build', '*LastBuildInfo.plist'),
             'interactionCcontacts': ('InteractionC', '**/interactionC.db'),
             'keyboardAppUsage': ('Keyboard', '*/private/var/mobile/Library/Keyboard/app_usage_database.plist'),
             'keyboardLexicon': ('Keyboard', '*/private/var/mobile/Library/Keyboard/*-dynamic.lm/dynamic-lexicon.dat'),
+            'keychainAll': ('Keychain', ('*/entitlements*', '*/generic_passwords*', '*/internet_passwords*', '*/identities*', '*/certificates*', '*/keys*')),
             'kikMessages': ('Kik', '**/kik.sqlite*'),
             'knowCall': ('KnowledgeC', '**/CoreDuet/Knowledge/knowledgeC.db'),
             'locationDallB': ('Locations', '**/cache_encryptedB.db'),
